@@ -7,7 +7,7 @@ import sys
 import configparser
 import time
 import shutil
-import openpyxl                      # Для .xlsx
+import openpyxl                       # Для .xlsx
 #import xlrd                          # для .xls
 from   price_tools import getCellXlsx, getCell, quoted, dump_cell, currencyType, openX, sheetByName
 import csv
@@ -37,7 +37,7 @@ def getXlsxString(sh, i, in_columns_j):
     impValues = {}
     for item in in_columns_j.keys() :
         j = in_columns_j[item]
-        if item in ('закупка','продажа','цена','цена1') :
+        if item in ('закупка','продажа','цена2','цена1') :
             if getCellXlsx(row=i, col=j, isDigit='N', sheet=sh).find('Звоните') >=0 :
                 impValues[item] = '0.01'
             else :
@@ -79,15 +79,15 @@ def convert_excel2csv(cfg):
     csvWriter = csv.DictWriter(outFile, fieldnames=out_cols )
     csvWriter.writeheader()
 
-    '''                                     # Блок проверки свойств для распознавания групп      XLSX                                  
-    for i in range(1, 18):                                                         
+                                         # Блок проверки свойств для распознавания групп      XLSX
+    for i in range(1, 28):
         i_last = i
         ccc = sheet.cell( row=i, column=in_cols_j['подгруппа'] )
         print(i, ccc.value)
         print(ccc.font.name, ccc.font.sz, ccc.font.b, ccc.font.i, ccc.font.color.rgb, '------', ccc.fill.fgColor.rgb)
         print('------')
     return
-    '''
+
     '''                                     # Блок проверки свойств для распознавания групп      XLS                                  
     for i in range(19, 25):                                                         
         xfx = sheet.cell_xf_index(i, 1)
@@ -170,11 +170,11 @@ def download( cfg ):
     LOGGER.setLevel(logging.WARNING)
      
     retCode     = False
-    filename_new= cfg.get('download','filename_new')
-    filename_old= cfg.get('download','filename_old')
-    login       = cfg.get('download','login'    )
-    password    = cfg.get('download','password' )
-    url_lk      = cfg.get('download','url_lk'   )
+    filename_new= cfg.get('basic','filename_new')
+    filename_old= cfg.get('basic','filename_old')
+    #login       = cfg.get('download','login'    )
+    #password    = cfg.get('download','password' )
+    #url_lk      = cfg.get('download','url_lk'   )
     url_file    = cfg.get('download','url_file' )
 
     download_path= os.path.join(os.getcwd(), 'tmp')
@@ -253,8 +253,8 @@ def download( cfg ):
             driver = webdriver.Firefox(ffprofile)
         driver.implicitly_wait(10)
         
-        driver.get(url_lk)
-        time.sleep(2)
+        #driver.get(url_lk)
+        #time.sleep(2)
         driver.get(url_file)
         time.sleep(2)
         driver.close()

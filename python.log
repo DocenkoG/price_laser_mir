@@ -1,0 +1,16 @@
+2019-06-05 18:34:26,406 INFO              laser_mir
+2019-06-05 19:08:06,334 INFO              laser_mir
+2019-06-05 19:08:45,749 INFO              laser_mir
+2019-06-05 19:37:40,647 INFO              laser_mir
+2019-06-05 19:40:20,356 INFO              laser_mir
+2019-06-05 19:40:21,813 DEBUG   Exception: <Message: Process unexpectedly closed with status 0
+>
+2019-06-05 19:40:21,815 ERROR   Не удалось скачать файл прайса 
+2019-06-05 19:40:21,815 ERROR   Не найден файл  new_laser_mir.xlsm
+2019-06-05 19:43:05,671 INFO              laser_mir
+2019-06-05 19:43:44,433 DEBUG   Exception: <Message: Browsing context has been discarded
+>
+2019-06-05 19:43:44,434 INFO    Скачанный файл price_lamir.xlsm имеет дату 2019-06-05 19:43:10
+2019-06-05 19:43:44,435 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-05 19:43:44,437 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-05 19:43:44,443 ERROR   Нет листа  в файле new_laser_mir.xlsm

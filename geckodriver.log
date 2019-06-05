@@ -1,0 +1,67 @@
+1559752985740	geckodriver	INFO	geckodriver 0.21.0
+1559752985745	geckodriver	INFO	Listening on 127.0.0.1:53993
+1559752986768	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/d9/fjqj7xn13yq48ctr7qz2mjz00000gn/T/rust_mozprofile.RrIYfJNcm0kN"
+1559752987326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559752987326	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559752987327	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559752987430	Marionette	TRACE	Received observer notification profile-after-change
+1559752987518	Marionette	TRACE	Received observer notification command-line-startup
+1559752987518	Marionette	TRACE	Received observer notification nsPref:changed
+1559752987518	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1559752987665	Marionette	TRACE	Received observer notification toplevel-window-ready
+1559752988519	Marionette	TRACE	Received observer notification sessionstore-windows-restored
+1559752988519	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1559752988669	Marionette	TRACE	All scripts recorded.
+1559752988669	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1559752988669	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1559752988669	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1559752988669	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1559752988669	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1559752988669	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1559752988670	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1559752988670	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1559752988670	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1559752988670	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1559752988670	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1559752988670	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1559752988670	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1559752988670	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1559752988670	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1559752988671	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1559752988671	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1559752988671	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1559752988705	Marionette	INFO	Listening on port 54000
+1559752988705	Marionette	DEBUG	Remote service is active
+1559752988803	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:54022
+1559752988806	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1559752988807	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559752988838	Marionette	TRACE	[4294967297] Frame script loaded
+1559752988840	Marionette	TRACE	[4294967297] Frame script registered
+1559752988845	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"575170da-18b9-e146-b9a7-80cb187dbd76","capabilities":{"browserName":"firefox","browserVersion":"66.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1559752988851	Marionette	DEBUG	0 -> [0,2,"WebDriver:SetTimeouts",{"implicit":10000}]
+1559752988852	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1559752988854	Marionette	DEBUG	0 -> [0,3,"WebDriver:Navigate",{"url":"http://www.lamir.ru/ftp/price_lamir.xlsm"}]
+1559752988858	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1559753022405	Marionette	TRACE	Received DOM event unload for [object XULDocument]
+1559753022414	Marionette	TRACE	Received observer notification message-manager-disconnect
+1559753022415	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1559753022415	Marionette	TRACE	[4294967297] Received DOM event unload for about:blank
+1559753022416	Marionette	TRACE	[4294967297] Received observer notification outer-window-destroyed
+1559753022422	Marionette	DEBUG	0 <- [1,3,null,{"value":null}]
+1559753024431	Marionette	DEBUG	0 -> [0,4,"WebDriver:CloseWindow",{}]
+1559753024431	Marionette	DEBUG	0 <- [1,4,{"error":"no such window","message":"Browsing context has been discarded","stacktrace":"WebDriverError@chrome://marionet ... et@chrome://marionette/content/server.js:235:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:493:9\n"},null]
+1559753024462	Marionette	DEBUG	Closed connection 0
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1559753517604	addons.xpi-utils	WARN	Add-on baidu-code-update@mozillaonline.com is not correctly signed.
+1559753517606	addons.xpi-utils	WARN	Add-on baidu-code-update@mozillaonline.com is not correctly signed.
+1559753517660	addons.xpi-utils	WARN	Add-on fxmonitor@mozilla.org is not correctly signed.
+1559753517660	addons.xpi-utils	WARN	Add-on fxmonitor@mozilla.org is not correctly signed.
+1559753517661	addons.xpi	WARN	System add-on baidu-code-update@mozillaonline.com isn't compatible with the application.
+1559753517661	addons.manager	WARN	Failed to update system addons: Error: Rejecting updated system add-on set that either could not be downloaded or contained unusable add-ons.(resource://gre/modules/addons/XPIInstall.jsm:3469:13) JS Stack trace: updateSystemAddons@XPIInstall.jsm:3469:13
