@@ -1,16 +1,150 @@
-2019-06-05 18:34:26,406 INFO              laser_mir
-2019-06-05 19:08:06,334 INFO              laser_mir
-2019-06-05 19:08:45,749 INFO              laser_mir
-2019-06-05 19:37:40,647 INFO              laser_mir
-2019-06-05 19:40:20,356 INFO              laser_mir
-2019-06-05 19:40:21,813 DEBUG   Exception: <Message: Process unexpectedly closed with status 0
->
-2019-06-05 19:40:21,815 ERROR   Не удалось скачать файл прайса 
-2019-06-05 19:40:21,815 ERROR   Не найден файл  new_laser_mir.xlsm
-2019-06-05 19:43:05,671 INFO              laser_mir
-2019-06-05 19:43:44,433 DEBUG   Exception: <Message: Browsing context has been discarded
->
-2019-06-05 19:43:44,434 INFO    Скачанный файл price_lamir.xlsm имеет дату 2019-06-05 19:43:10
-2019-06-05 19:43:44,435 INFO    ----------------------- Processing cfg_price.cfg
-2019-06-05 19:43:44,437 DEBUG   Reading file new_laser_mir.xlsm
-2019-06-05 19:43:44,443 ERROR   Нет листа  в файле new_laser_mir.xlsm
+2019-06-06 15:29:22,596 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1588.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1590.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1591.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1592.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1593.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1594.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1595.
+2019-06-06 15:29:22,601 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1596.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1597.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1598.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1599.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1600.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1601.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1602.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1603.
+2019-06-06 15:29:22,602 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1604.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1605.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1606.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1607.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1608.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1609.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1610.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1611.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1612.
+2019-06-06 15:29:22,603 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1613.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1614.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1615.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1616.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1617.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1618.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1619.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1620.
+2019-06-06 15:29:22,604 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1621.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1622.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1623.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1624.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1625.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1627.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1628.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1629.
+2019-06-06 15:29:22,605 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1630.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1631.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1632.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1633.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1634.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1635.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1636.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1637.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1638.
+2019-06-06 15:29:22,606 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1640.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1641.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1642.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1643.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1644.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1645.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1646.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1647.
+2019-06-06 15:29:22,607 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1648.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1650.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1652.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1653.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1654.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1655.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1657.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1658.
+2019-06-06 15:29:22,608 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1659.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1660.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1661.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1662.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1663.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1664.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1665.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1666.
+2019-06-06 15:29:22,609 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1667.
+2019-06-06 15:29:22,610 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1668.
+2019-06-06 15:29:22,610 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1669.
+2019-06-06 15:29:22,610 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1670.
+2019-06-06 15:29:22,611 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1680.
+2019-06-06 15:29:22,611 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1681.
+2019-06-06 15:29:22,611 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1682.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1683.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1684.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1685.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1686.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1687.
+2019-06-06 15:29:22,612 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1688.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1689.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1690.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1691.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1692.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1693.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1694.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1695.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1696.
+2019-06-06 15:29:22,613 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1697.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1698.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1699.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1700.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1701.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1702.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1703.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1704.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1705.
+2019-06-06 15:29:22,614 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1706.
+2019-06-06 15:29:22,615 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1709.
+2019-06-06 15:29:22,615 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1711.
+2019-06-06 15:29:22,615 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1712.
+2019-06-06 15:29:22,615 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1713.
+2019-06-06 15:29:22,616 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1747.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1749.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1750.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1751.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1752.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1753.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1757.
+2019-06-06 15:29:22,617 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1758.
+2019-06-06 15:29:22,618 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1759.
+2019-06-06 15:29:22,618 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1760.
+2019-06-06 15:29:22,618 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1761.
+2019-06-06 15:29:22,618 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1762.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1779.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1782.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1785.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1786.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1789.
+2019-06-06 15:29:22,619 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1790.
+2019-06-06 15:29:22,620 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1801.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1826.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1827.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1828.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1829.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1830.
+2019-06-06 15:29:22,621 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1831.
+2019-06-06 15:29:22,622 DEBUG   Exception: <unsupported operand type(s) for +: 'Cell' and 'Cell'> при обработке строки 1834.
+2019-06-06 15:29:22,623 INFO    Обработано 1875 строк.
+2019-06-06 15:31:17,419 INFO              laser_mir
+2019-06-06 15:31:17,420 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 15:31:17,420 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 15:31:18,052 DEBUG   Sheet   Прайс
+2019-06-06 15:31:18,177 INFO    Обработано 1875 строк.
+2019-06-06 15:34:46,772 INFO              laser_mir
+2019-06-06 15:34:46,772 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 15:34:46,773 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 15:34:47,401 DEBUG   Sheet   Прайс
+2019-06-06 15:34:47,520 INFO    Обработано 1875 строк.
+2019-06-06 15:35:51,139 INFO              laser_mir
+2019-06-06 15:35:51,140 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 15:35:51,141 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 15:35:51,774 DEBUG   Sheet   Прайс
+2019-06-06 15:35:51,885 INFO    Обработано 1875 строк.

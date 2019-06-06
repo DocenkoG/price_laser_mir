@@ -19,12 +19,12 @@ def sheetByName( fileName
                 ,sheetName):
     typeX = fileName[fileName.find('.')+1 :]
     try:
-        if typeX.lower() == 'xlsx':
-            book = openpyxl.load_workbook(filename = fileName, read_only=False, keep_vba=False, data_only=False) # xlsx
-            sheet = book[sheetName]                                                                              # xlsx 
-        else:
+        if typeX.lower() == 'xls':
             book = xlrd.open_workbook( fileName.encode('cp1251'), formatting_info=True)                          # xls
             sheet = book.sheet_by_name(sheetName)
+        else:
+            book = openpyxl.load_workbook(filename=fileName, read_only=False, keep_vba=False, data_only=False)  # xlsx
+            sheet = book[sheetName]  # xlsx
     except Exception as e:
         print(e)
         sheet = False
@@ -58,7 +58,7 @@ def getCellXlsx(  row       # номер строки
         else :
 #           ss = '0'
             try:
-                ss = str(float(cellValue.replace(',','.')))
+                ss = str(float(cellValue.replace('руб.','').replace('р','').replace(',','.').replace(' ','')))
             except ValueError as e:
                 ss='0'
     else :

@@ -38,7 +38,7 @@ def getXlsxString(sh, i, in_columns_j):
     for item in in_columns_j.keys() :
         j = in_columns_j[item]
         if item in ('закупка','продажа','цена2','цена1') :
-            if getCellXlsx(row=i, col=j, isDigit='N', sheet=sh).find('Звоните') >=0 :
+            if getCellXlsx(row=i, col=j, isDigit='N', sheet=sh).find('по запросу') >=0:
                 impValues[item] = '0.01'
             else :
                 impValues[item] = getCellXlsx(row=i, col=j, isDigit='Y', sheet=sh)
@@ -52,13 +52,17 @@ def getXlsxString(sh, i, in_columns_j):
 
 
 def convert_excel2csv(cfg):
-    csvFName  = cfg.get('basic','filename_out')
+    csvFfileNameRUR = cfg.get('basic', 'filename_out_RUR')
+    csvFfileNameUSD = cfg.get('basic', 'filename_out_USD')
     priceFName= cfg.get('basic','filename_in')
     sheetName = cfg.get('basic','sheetname')
+
+    outFileRUR = open(csvFfileNameRUR, 'w', newline='')
+    outFileUSD = open(csvFfileNameUSD, 'w', newline='')
     
     log.debug('Reading file ' + priceFName )
     book, sheet = sheetByName(fileName = priceFName, sheetName = sheetName)
-    if not sheet :
+    if not sheet:
         log.error("Нет листа "+sheetName+" в файле "+ priceFName)
         return False
     log.debug("Sheet   "+sheetName)
@@ -75,19 +79,20 @@ def convert_excel2csv(cfg):
     #    discount[k] = (100 - int(discount[k]))/100
     #print(discount)
 
-    outFile = open( csvFName, 'w', newline='', encoding='CP1251', errors='replace')
-    csvWriter = csv.DictWriter(outFile, fieldnames=out_cols )
-    csvWriter.writeheader()
+    csvWriterRUR = csv.DictWriter(outFileRUR, fieldnames=cfg.options('cols_out'))
+    csvWriterUSD = csv.DictWriter(outFileUSD, fieldnames=cfg.options('cols_out'))
+    csvWriterRUR.writeheader()
+    csvWriterUSD.writeheader()
 
-                                         # Блок проверки свойств для распознавания групп      XLSX
-    for i in range(1, 28):
+    '''                                     # Блок проверки свойств для распознавания групп      XLSX
+    for i in range(2, 28):
         i_last = i
         ccc = sheet.cell( row=i, column=in_cols_j['подгруппа'] )
         print(i, ccc.value)
-        print(ccc.font.name, ccc.font.sz, ccc.font.b, ccc.font.i, ccc.font.color.rgb, '------', ccc.fill.fgColor.rgb)
+        print(ccc.font.name, ccc.font.sz, ccc.font.b, ccc.font.i, '------', ccc.font.color.rgb, ccc.fill.bgColor.rgb, ccc.fill.fgColor.rgb)
         print('------')
     return
-
+    '''
     '''                                     # Блок проверки свойств для распознавания групп      XLS                                  
     for i in range(19, 25):                                                         
         xfx = sheet.cell_xf_index(i, 1)
@@ -124,19 +129,21 @@ def convert_excel2csv(cfg):
             impValues = getXlsxString(sheet, i, in_cols_j)                # xlsx
             #impValues = getXlsString(sheet, i, in_cols_j)                # xls
             #print( impValues )
-            ccc = sheet.cell( row=i, column=in_cols_j['подгруппа'] )
-            if impValues['код_'] == '' :                                                   # Конец массива данных
-                break
-            elif ccc.font.sz == 11 :                                                       # подгруппа
-                subgrp = impValues['подгруппа']
-                continue
-            elif impValues['цена1']=='0': # (ccc.value == None) or (ccc2.value == None) :  # Пустая строка
-                pass
-                #print( 'Пустая строка. i=',i, impValues )
-            elif impValues['код_'] == 'Артикул' :                                          # Пустая строка
+            ccc1 = sheet.cell(row=i, column=in_cols_j['цена1']).value
+            ccc2 = sheet.cell(row=i, column=in_cols_j['цена2']).value
+
+            if float(impValues['цена1']) + float(impValues['цена2']) < 0.1:               # ненужная строка
                 continue
             else :                                                                         # Обычная строка
-                impValues['подгруппа'] = subgrp
+                if impValues['столбец j'] != '':
+                    impValues['столбец j'] = '/рез.:' + impValues['столбец j']
+                if impValues['столбец l'] != '':
+                    impValues['столбец l'] = '/транзит:' + impValues['столбец l']
+                print(str(ccc1) + str(ccc2))
+                if 'р' in str(ccc1) + str(ccc2):
+                    impValues['валюта'] = 'RUR'
+                else:
+                    impValues['валюта'] = 'USD'
                 for outColName in out_template.keys() :
                     shablon = out_template[outColName]
                     for key in impValues.keys():
@@ -149,7 +156,12 @@ def convert_excel2csv(cfg):
                         shablon = str(round(vvv1 * vvv2, 2))
                     recOut[outColName] = shablon.strip()
 
-                csvWriter.writerow(recOut)
+                if recOut['валюта'] == 'RUR':
+                    csvWriterRUR.writerow(recOut)
+                elif recOut['валюта'] == 'USD':
+                    csvWriterUSD.writerow(recOut)
+                else:
+                    log.error('нераспознана валюта "%s" для товара "%s"', recOut['валюта'], recOut['код производителя'])
 
         except Exception as e:
             print(e)
@@ -159,7 +171,8 @@ def convert_excel2csv(cfg):
                 log.debug('Exception: <' + str(e) + '> при обработке строки ' + str(i) +'.' )
 
     log.info('Обработано ' +str(i_last)+ ' строк.')
-    outFile.close()
+    outFileRUR.close()
+    outFileUSD.close()
 
 
 
@@ -252,7 +265,8 @@ def download( cfg ):
         elif os.name == 'nt':
             driver = webdriver.Firefox(ffprofile)
         driver.implicitly_wait(10)
-        
+        driver.set_page_load_timeout(10)
+
         #driver.get(url_lk)
         #time.sleep(2)
         driver.get(url_file)
@@ -263,11 +277,12 @@ def download( cfg ):
 
     except Exception as e:
         log.debug('Exception: <' + str(e) + '>')
+        driver.quit()
 
     dir_afte_download = set(os.listdir(download_path))
     new_files = list( dir_afte_download.difference(dir_befo_download))
     print(new_files)
-    if len(new_files) == 0 :        
+    if len(new_files) == 0:
         log.error( 'Не удалось скачать файл прайса ')
         retCode= False
     elif len(new_files)>1 :
@@ -331,7 +346,9 @@ def config_read( cfgFName ):
     cfg = configparser.ConfigParser(inline_comment_prefixes=('#'))
     if  os.path.exists('private.cfg'):     
         cfg.read('private.cfg', encoding='utf-8')
-    if  os.path.exists(cfgFName):     
+    if  os.path.exists('getting.cfg'):
+        cfg.read('getting.cfg', encoding='utf-8')
+    if  os.path.exists(cfgFName):
         cfg.read( cfgFName, encoding='utf-8')
     else: 
         log.debug('Нет файла конфигурации '+cfgFName)
@@ -375,12 +392,12 @@ def main(dealerName):
     if  os.path.exists('getting.cfg'):
         cfg = config_read('getting.cfg')
         filename_new = cfg.get('basic','filename_new')
-
+        '''
         if cfg.has_section('download'):
             rc_download = download(cfg)
         if not(rc_download==True or is_file_fresh( filename_new, int(cfg.get('basic','срок годности')))):
             return False
-
+        '''
     for cfgFName in os.listdir("."):
         if cfgFName.startswith("cfg") and cfgFName.endswith(".cfg"):
             log.info('----------------------- Processing '+cfgFName )
