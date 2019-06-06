@@ -139,7 +139,6 @@ def convert_excel2csv(cfg):
                     impValues['столбец j'] = '/рез.:' + impValues['столбец j']
                 if impValues['столбец l'] != '':
                     impValues['столбец l'] = '/транзит:' + impValues['столбец l']
-                print(str(ccc1) + str(ccc2))
                 if 'р' in str(ccc1) + str(ccc2):
                     impValues['валюта'] = 'RUR'
                 else:
@@ -392,12 +391,11 @@ def main(dealerName):
     if  os.path.exists('getting.cfg'):
         cfg = config_read('getting.cfg')
         filename_new = cfg.get('basic','filename_new')
-        '''
         if cfg.has_section('download'):
             rc_download = download(cfg)
         if not(rc_download==True or is_file_fresh( filename_new, int(cfg.get('basic','срок годности')))):
             return False
-        '''
+
     for cfgFName in os.listdir("."):
         if cfgFName.startswith("cfg") and cfgFName.endswith(".cfg"):
             log.info('----------------------- Processing '+cfgFName )

@@ -148,3 +148,37 @@
 2019-06-06 15:35:51,141 DEBUG   Reading file new_laser_mir.xlsm
 2019-06-06 15:35:51,774 DEBUG   Sheet   РџСЂР°Р№СЃ
 2019-06-06 15:35:51,885 INFO    РћР±СЂР°Р±РѕС‚Р°РЅРѕ 1875 СЃС‚СЂРѕРє.
+2019-06-06 17:04:41,854 INFO              laser_mir
+2019-06-06 17:04:41,858 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 17:04:41,863 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 17:04:44,405 DEBUG   Sheet   Прайс
+2019-06-06 17:04:45,803 INFO    Обработано 1875 строк.
+2019-06-06 17:21:30,273 INFO              laser_mir
+2019-06-06 17:21:30,277 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 17:21:30,283 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 17:21:32,623 DEBUG   Sheet   Прайс
+2019-06-06 17:21:33,992 INFO    Обработано 1875 строк.
+2019-06-06 17:23:20,697 INFO              laser_mir
+2019-06-06 17:23:39,044 DEBUG   Exception: <Message: Timeout loading page after 10000ms
+>
+2019-06-06 17:23:40,702 INFO    Скачанный файл price_lamir.xlsm имеет дату 2019-06-06 17:23:29
+2019-06-06 17:23:40,708 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 17:23:40,712 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 17:23:43,035 DEBUG   Sheet   Прайс
+2019-06-06 17:23:44,372 INFO    Обработано 1875 строк.
+2019-06-06 17:50:07,863 INFO              laser_mir
+2019-06-06 17:50:27,730 DEBUG   Exception: <Message: Timeout loading page after 10000ms
+>
+2019-06-06 17:50:30,539 INFO    Скачанный файл price_lamir.xlsm имеет дату 2019-06-06 17:50:18
+2019-06-06 17:50:30,557 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 17:50:30,563 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 17:50:33,020 DEBUG   Sheet   Прайс
+2019-06-06 17:50:34,253 INFO    Обработано 1875 строк.
+2019-06-06 18:01:49,833 INFO              laser_mir
+2019-06-06 18:02:08,067 DEBUG   Exception: <Message: Timeout loading page after 10000ms
+>
+2019-06-06 18:02:09,812 INFO    Скачанный файл price_lamir.xlsm имеет дату 2019-06-06 18:01:58
+2019-06-06 18:02:09,818 INFO    ----------------------- Processing cfg_price.cfg
+2019-06-06 18:02:09,823 DEBUG   Reading file new_laser_mir.xlsm
+2019-06-06 18:02:12,219 DEBUG   Sheet   Прайс
+2019-06-06 18:02:12,861 INFO    Обработано 1875 строк.
