@@ -143,10 +143,12 @@ def convert_excel2csv(cfg):
                     impValues['валюта'] = 'RUR'
                 else:
                     impValues['валюта'] = 'USD'
+                if float(impValues['цена2']) >.0 and float(impValues['цена1']) < 0.1:
+                    impValues['цена1'] = impValues['цена2']
                 for outColName in out_template.keys() :
                     shablon = out_template[outColName]
                     for key in impValues.keys():
-                        if shablon.find(key) >= 0 :
+                        if shablon.find(key) >= 0:
                             shablon = shablon.replace(key, impValues[key])
                     if (outColName == 'закупка') and ('*' in shablon) :
                         p = shablon.find("*")
