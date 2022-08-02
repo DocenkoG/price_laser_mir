@@ -142,7 +142,7 @@ def convert_excel2csv(cfg):
                 if 'р' in str(ccc1) + str(ccc2):
                     impValues['валюта'] = 'RUR'
                 else:
-                    impValues['валюта'] = 'USD'
+                    impValues['валюта'] = 'RUR'
                 if float(impValues['цена2']) >.0 and float(impValues['цена1']) < 0.1:
                     impValues['цена1'] = impValues['цена2']
                 for outColName in out_template.keys() :
