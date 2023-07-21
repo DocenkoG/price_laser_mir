@@ -135,15 +135,8 @@ def convert_excel2csv(cfg):
             if float(impValues['цена1']) + float(impValues['цена2']) < 0.1:               # ненужная строка
                 continue
             else :                                                                         # Обычная строка
-                if impValues['столбец j'] != '':
-                    impValues['столбец j'] = '/рез.:' + impValues['столбец j']
-                if impValues['столбец l'] != '':
-                    impValues['столбец l'] = '/транзит:' + impValues['столбец l']
-                if 'р' in str(ccc1) + str(ccc2):
-                    impValues['валюта'] = 'RUR'
-                else:
-                    impValues['валюта'] = 'RUR'
-                if float(impValues['цена2']) >.0 and float(impValues['цена1']) < 0.1:
+                impValues['валюта'] = 'RUR'
+                if float(impValues['цена2']) >.0 :
                     impValues['цена1'] = impValues['цена2']
                 for outColName in out_template.keys() :
                     shablon = out_template[outColName]
